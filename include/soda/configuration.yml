@@ -1,0 +1,14 @@
+data_source retail:
+  type: bigquery
+  connection:
+    account_info_json_path: /usr/local/airflow/include/gcp/service_account.json
+    auth_scopes:
+    - https://www.googleapis.com/auth/bigquery
+    - https://www.googleapis.com/auth/cloud-platform
+    - https://www.googleapis.com/auth/drive
+    project_id: 'passamons-retail-data-pipeline'
+    dataset: retail
+soda_cloud:
+  host: cloud.us.soda.io
+  api_key_id: 074a02ee-dbcd-43eb-88b3-51eb6f24d455
+  api_key_secret: _BUg3yF7qJRUkjfiwVKPKjYeqYEa6Km90w7GAg1iNKSnVAX-uW4kHA
